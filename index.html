@@ -7,25 +7,33 @@
 		<title>Eva Ma Sospedra. Diseño web y maquetación</title>
 		<meta name="description" content="Diseño, web, frontend, front-end, maquetacion, html5, CSS3, LESS, Bootstrap. Diseño y maquetación web" />
 		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/main.js"></script>
+		<script>
+			$(window).on('scroll', function(){
+				$timeline_block.each(function(){
+					if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+						$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+					}
+				});
+			});
+		</script>
+		
 	</head>
-	
-	<style>
-			@font-face {
-			  font-family: 'TiemposHeadline-Black';
-			  src: url(http://www.lavanguardia.com/rsc/fonts/TiemposHeadlineWeb-Black.eot#iefix) format('embedded-opentype'), url(http://www.lavanguardia.com/rsc/fonts/TiemposHeadlineWeb-Black.woff) format('woff');
-			  font-weight: normal;
-			  font-style: normal;
-			}
-			body {font-family:}
-		    .star {vertical-align: text-bottom;}
-	</style>
 	
 	
 	<body>
+	
+		<h1>WEB EN CONSTRUCCIÓN - DISCULPEN LAS MOLESTIAS</h1>
+		<br>
+		<br>
+		<br>
+	
+	
 		<section>
 			<header>
-				<h1>Eva Ma Sospedra Martínez</h1>
-				<h2>Frontend - Diseñadora Gráfica</h2>
+				<h1 class="cv-name">Eva Ma Sospedra Martínez</h1>
+				<h2 class="cv-title">Frontend - Diseñadora Gráfica</h2>
 			</header>
 			<ul class="contact">
 				<li><svg></svg>617648320</li>
@@ -71,6 +79,71 @@
 			</ul>
 		</article>
 		
+		
+		
+		<!--timeline-->
+<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Jan 14</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="img/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Jan 18</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Jan 24</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 4</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Feb 14</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+</section>
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		<article>
 			<h1>Experiencia</h1>
 			<ul itemscope itemtype="http://schema.org/Event">
@@ -92,5 +165,8 @@
 				<li><p>el cine, los libros y el teatro</p></li>
 			</ul>
 		</article>  
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/main.js"></script> <!-- Resource jQuery -->
 	</body>
 </html>
