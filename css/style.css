@@ -78,6 +78,7 @@ ul {
 .cv-contact {
 	margin:20px 0;
 }
+
 .cv-telephone {
 	
 }
@@ -94,13 +95,26 @@ ul {
 
 .cv-table {
 	display:table;
+	width:100%;
 }
 .cv-row {
 	display:table-row;
 }
 .cv-cell{
 	display:table-cell;
+	width:50%;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*timeline*/
 .cv-timeline {
