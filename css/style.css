@@ -62,38 +62,23 @@ ul {
 	padding:0 12px;
 }
 
-.star {
+.cv-star {
 	vertical-align: text-bottom;
 }
-.cv-name {
+.cv-header__name {
 	color:#3c3c3c;
 	font-family:"roboto-bold";
 	font-size:24px;
 }
-.cv-title {
+.cv-header__title {
 	color:#959595;
 	font-family:"opensans-regular",arial;
 	font-size:16px;
 }
-.cv-contact {
+.cv-list__contact {
 	margin:20px 0;
 }
-
-.cv-telephone {
-	
-}
-.cv-mail {
-	
-}
-.cv-url {
-	
-}
-
-
-
-
-
-.cv-table {
+.cv-content__table {
 	display:table;
 	width:100%;
 }
@@ -106,24 +91,14 @@ ul {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*timeline*/
-.cv-timeline {
+.cv-content__timeline {
   position: relative;
   padding: 2em 0;
   margin-top: 2em;
   margin-bottom: 2em;
 }
-.cv-timeline::before {
+.cv-content__timeline::before {
   /* this is the vertical line */
   content: '';
   position: absolute;
