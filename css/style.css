@@ -78,6 +78,20 @@ ul {
 .cv-contact {
 	margin:20px 0;
 }
+.cv-telephone {
+	
+}
+.cv-mail {
+	
+}
+.cv-url {
+	
+}
+
+
+
+
+
 .cv-table {
 	display:table;
 }
@@ -105,3 +119,5 @@ ul {
   width: 4px;
   background: #d7e4ed;
 }
+
+
