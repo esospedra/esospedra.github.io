@@ -79,16 +79,21 @@ ul {
 	list-style-type:none;
 }
 
+/*header*/
 .main {
 	background-color:#fff;
+	margin:0 auto;
 	position:relative;
+	width:60%;
 }
 .container {
 	margin:auto;
 	padding:0 12px;
 }
-.cv-star {
-	vertical-align: text-bottom;
+.cv-header {
+	display:inline-block;
+	vertical-align:middle;
+	width:70%;
 }
 .cv-header__name {
 	color:#3c3c3c;
@@ -101,8 +106,16 @@ ul {
 	font-size:16px;
 }
 .cv-list__contact {
-	margin:20px 0;
+	display:inline-block;
+	vertical-align:middle;
+	width:20%;
 }
+
+/*coneixements*/
+.cv-star { 
+	vertical-align: text-bottom;
+}
+
 .cv-content__table {
 	display:table;
 	width:100%;
@@ -116,11 +129,12 @@ ul {
 }
 
 
+
+
+
 /*timeline*/
 .cd-container {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 1170px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 .cd-container::after {
@@ -130,13 +144,13 @@ ul {
   clear: both;
 }
 
-#cd-timeline {
+.cd-timeline {
   position: relative;
   padding: 2em 0;
   margin-top: 2em;
   margin-bottom: 2em;
 }
-#cd-timeline::before {
+.cd-timeline::before {
   /* this is the vertical line */
   content: '';
   position: absolute;
@@ -173,21 +187,18 @@ ul {
 }
 .cd-timeline-img img {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 27px;
+  height: 27px;
   position: relative;
   left: 50%;
   top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
+  margin-left: -14px;
+  margin-top: -14px;
 }
 .cd-timeline-img.cd-picture {
   background: #75ce66;
 }
-.cd-timeline-img.cd-movie {
-  background: #c03b44;
-}
-.cd-timeline-img.cd-location {
+.cd-timeline-img.cd-experience {
   background: #f0ca45;
 }
 .cd-timeline-content {
@@ -230,12 +241,24 @@ ul {
 
 /*MEDIA*/
 
+@media only screen and (max-width: 768px) {
+	.cv-header {
+		margin-bottom:20px;
+		width:100%;
+	}
+	.cv-list__contact {
+		margin-bottom:20px;
+		width:100%;
+	}
+}
+
+
 @media only screen and (min-width: 1170px) {
-  #cd-timeline {
+  .cd-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
   }
-  #cd-timeline::before {
+  .cd-timeline::before {
     left: 50%;
     margin-left: -2px;
   }
