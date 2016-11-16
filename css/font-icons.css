@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'cvicons';
-  src:  url('fonts/cvicons.eot?f0ri02');
-  src:  url('fonts/cvicons.eot?f0ri02#iefix') format('embedded-opentype'),
-    url('fonts/cvicons.ttf?f0ri02') format('truetype'),
-    url('fonts/cvicons.woff?f0ri02') format('woff'),
-    url('fonts/cvicons.svg?f0ri02#cvicons') format('svg');
+  src:  url('../fonts/cvicons.eot');
+  src:  url('../fonts/cvicons.eot#iefix') format('embedded-opentype'),
+    url('../fonts/cvicons.ttf') format('truetype'),
+    url('../fonts/cvicons.woff') format('woff'),
+    url('../fonts/cvicons.svg#cvicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="cv-"], [class*=" cv-"] {
+[class^="cv-icons"], [class*=" cv-icons"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'cvicons' !important;
   speak: none;

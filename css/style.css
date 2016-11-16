@@ -22,7 +22,9 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /*reset*/
+
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -58,16 +60,17 @@ ul {
 	background-color:#fff;
 	margin:0 auto;
 	position:relative;
-	width:60%;
+	width:95%;
 }
 .container {
-	margin:auto;
+	margin:20px auto;
 	padding:0 12px;
 }
 .cv-header {
 	display:inline-block;
+	margin-bottom:10px;
 	vertical-align:middle;
-	width:70%;
+	width:100%;
 }
 .cv-header__name {
 	color:#3c3c3c;
@@ -82,12 +85,23 @@ ul {
 .cv-list__contact {
 	display:inline-block;
 	vertical-align:middle;
-	width:20%;
+	width:100%;
 }
 
 /*content*/
 .cv-star { 
 	vertical-align: text-bottom;
+}
+.cv-icons_student,
+.cv-icons_experience {
+   position: relative;
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+}
+.cv-icons_student:before,
+.cv-icons_experience:before {
+   font-size:30px;	
 }
 
 .cv-content__table {
@@ -102,10 +116,6 @@ ul {
 	width:50%;
 }
 
-
-
-
-
 /*timeline*/
 .cv-container {
   max-width: 1024px;
@@ -117,12 +127,11 @@ ul {
   display: table;
   clear: both;
 }
-
 .cv-timeline {
   position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  padding: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .cv-timeline::before {
   /* this is the vertical line */
@@ -134,10 +143,9 @@ ul {
   width: 4px;
   background: #d7e4ed;
 }
-
 .cv-timeline-block {
   position: relative;
-  margin: 2em 0;
+  margin: 20px 0;
 }
 .cv-timeline-block:after {
   content: "";
@@ -179,8 +187,8 @@ ul {
   position: relative;
   margin-left: 60px;
   background: #f0f0f0;
-  border-radius: 0.25em;
-  padding: 1em;
+  border-radius: 25px;
+  padding: 10px;
   box-shadow: 0 3px 0 #e3e3e3;
 }
 .cv-timeline-content:after {
@@ -192,12 +200,13 @@ ul {
   color: #303e49;
 }
 .cv-timeline-content p {
-  margin: 1em 0;
-  line-height: 1.6;
+  font-size:12px;	
+  margin: 10px 0;
+  line-height: 16px;
 }
 .cv-timeline-content .cv-date {
   float: left;
-  padding: .8em 0;
+  padding: 8px 0;
   opacity: .7;
 }
 .cv-timeline-content::before {
@@ -214,7 +223,7 @@ ul {
 
 
 /*MEDIA*/
-
+/*
 @media only screen and (max-width: 768px) {
 	.cv-header {
 		margin-bottom:20px;
@@ -244,7 +253,7 @@ ul {
     height: 60px;
     left: 50%;
     margin-left: -30px;
-    /* Force Hardware Acceleration in WebKit */
+    
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
@@ -301,7 +310,4 @@ ul {
     right: 122%;
     text-align: right;
   }
-}
-
-
-
+}*/
