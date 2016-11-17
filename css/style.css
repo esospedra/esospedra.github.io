@@ -104,6 +104,10 @@ ul {
    font-size:30px;	
 }
 
+.cv-headercontent__title {
+	font-size:14px;
+}
+
 .cv-content__table {
 	display:table;
 	width:100%;
@@ -117,6 +121,9 @@ ul {
 }
 
 /*timeline*/
+.cv-headertimeline__title {
+	font-size:20px;
+}
 .cv-container {
   max-width: 1024px;
   margin: 0 auto;
@@ -219,11 +226,14 @@ ul {
   border: 7px solid transparent;
   border-right: 7px solid #f0f0f0;
 }
-
+/*intereses*/
+.cv-headerinterest__title {
+	font-size:20px;
+}
 
 
 /*MEDIA*/
-/*
+
 @media only screen and (max-width: 768px) {
 	.cv-header {
 		margin-bottom:20px;
@@ -310,4 +320,4 @@ ul {
     right: 122%;
     text-align: right;
   }
-}*/
+}
