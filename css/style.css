@@ -89,8 +89,20 @@ ul {
 }
 
 /*content*/
-.cv-star { 
+.cv-icons_star { 
+	position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
 	vertical-align: text-bottom;
+}
+.cv-icons_star:before  {
+	font-size:25px;
+}
+.cv-icons {
+	left: 5px;
+    top: 5px;
+	position: relative;
 }
 .cv-icons_student,
 .cv-icons_experience {
@@ -101,11 +113,13 @@ ul {
 }
 .cv-icons_student:before,
 .cv-icons_experience:before {
+   color:white;
    font-size:30px;	
 }
 
 .cv-headercontent__title {
-	font-size:14px;
+	font-size:20px;
+	margin:20px 0 10px;
 }
 
 .cv-content__table {
@@ -117,12 +131,14 @@ ul {
 }
 .cv-cell{
 	display:table-cell;
+	padding-bottom:10px;
 	width:50%;
 }
 
 /*timeline*/
 .cv-headertimeline__title {
 	font-size:20px;
+	margin:20px 0 10px;
 }
 .cv-container {
   max-width: 1024px;
@@ -229,7 +245,38 @@ ul {
 /*intereses*/
 .cv-headerinterest__title {
 	font-size:20px;
+	margin:20px 0 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*MEDIA*/

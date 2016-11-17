@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.cv-icons_star_b:before {
+  content: "\e906";
+}
 .cv-icons_experience:before {
   content: "\e900";
 }
@@ -42,4 +45,3 @@
 .cv-icons_web:before {
   content: "\e905";
 }
-
