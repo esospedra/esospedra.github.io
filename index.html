@@ -45,7 +45,7 @@
 				</article>
 				
 				<article>
-					<h1 class="cv-headertimeline__title">Formación</h1>
+					<button class="cv-headertimeline__title">Formación</button>
 					<ul class="cv-timeline cv-content__timeline cv-container" itemscope itemtype="http://schema.org/Event">
 						<li class="cv-list__item cv-timeline-block">
 							<p itemprop="name" class="cv-timeline-img cv-picture">
@@ -232,10 +232,10 @@
 				<article>
 					<h1 class="cv-headerinterest__title">Intereses</h1>
 					<ul class="cv-interest__list" itemscope itemtype="http://schema.org/Event">
-						<li class="cv-interest__item"><p>la nuevas tecnologías</p></li>
-						<li class="cv-interest__item"><p>la macrofotografía</p></li>
-						<li class="cv-interest__item"><p>los animales</p></li>
-						<li class="cv-interest__item"><p>el cine, los libros y el teatro</p></li>
+						<li class="cv-interest__item"><p><i class="cv-list__item_circle"></i>la nuevas tecnologías</p></li>
+						<li class="cv-interest__item"><p><i class="cv-list__item_circle"></i>la macrofotografía</p></li>
+						<li class="cv-interest__item"><p><i class="cv-list__item_circle"></i>los animales</p></li>
+						<li class="cv-interest__item"><p><i class="cv-list__item_circle"></i>el cine, los libros y el teatro</p></li>
 					</ul>
 				</article>
 				
@@ -253,5 +253,13 @@
 				</section>
 			</div>
 		</div>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".cv-headertimeline__title").click(function(){
+					$("ul.cv-timeline").toggle();
+				});
+			});
+		</script>
 	</body>
 </html>
