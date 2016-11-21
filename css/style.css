@@ -76,6 +76,7 @@ ul {
 	color:#3c3c3c;
 	font-family:"roboto-bold";
 	font-size:24px;
+	padding-bottom:10px;
 }
 .cv-header__title {
 	color:#959595;
@@ -89,15 +90,22 @@ ul {
 }
 
 /*content*/
-.cv-icons_star { 
+.cv-icons_star ,
+.cv-icons_star-b{ 
 	position: relative;
     display: inline-block;
     width: 25px;
     height: 25px;
 	vertical-align: text-bottom;
 }
-.cv-icons_star:before  {
+.cv-icons_star:before {
 	font-size:25px;
+}
+.cv-icons_star-b:before  {
+	font-size:24px;
+}
+.cv-icons_star_b {
+	color:#959595;
 }
 .cv-icons {
 	left: 5px;
