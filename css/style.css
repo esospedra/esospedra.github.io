@@ -61,7 +61,7 @@ ul {
 	background-color:#fff;
 	margin:0 auto;
 	position:relative;
-	width:95%;
+	width:100%;
 }
 .container {
 	margin:20px auto;
@@ -89,7 +89,7 @@ ul {
 	vertical-align:middle;
 	width:100%;
 }
-.cv-list__item_circle {
+/*.cv-list__item_circle {
 	background-color:#cff5ff;
 	background: radial-gradient(at top left, #cff5ff 20%, #4ad7ff);
 	-ms-border-radius: 150px;
@@ -97,9 +97,10 @@ ul {
 	-webkit-border-radius: 150px;
 	-o-border-radius: 150px;
 	border-radius: 150px;
-	width:20px
-	
-}
+	display:block;
+	height:40px;
+	width:40px;
+}*/
 
 /*content*/
 .cv-icons_star ,
@@ -269,8 +270,25 @@ ul {
   }
 /*intereses*/
 .cv-headerinterest__title {
-	font-size:20px;
-	margin:20px 0 10px;
+	background:linear-gradient(to right, #efefef, #f9f9f9);
+	margin:20px 0 10px -12px;
+	padding:12px 20px;
+}
+.cv-interest__item {
+	margin-bottom:10px;
+}
+.cv-icons_animals:before,
+.cv-icons_book:before,
+.cv-icons_photography:before,
+.cv-icons_technology:before {
+	padding-right:10px;
+}	
+.cv-icons_animals:before,
+.cv-icons_book:before,
+.cv-icons_photography:before,
+.cv-icons_technology:before {
+	font-size:22px;
+	position:relative;
 }
 
 
