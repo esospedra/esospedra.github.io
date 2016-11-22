@@ -24,25 +24,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.cv-icons_star-b:before {
+.cv-icons:before {
   content: "\e900";
 }
-.cv-icons_experience:before {
+.cv-icons_animals:before {
   content: "\e901";
 }
-.cv-icons_mail:before {
+.cv-icons_book:before {
   content: "\e902";
 }
-.cv-icons_star:before {
+.cv-icons_experience:before {
   content: "\e903";
 }
-.cv-icons_student:before {
+.cv-icons_mail:before {
   content: "\e904";
 }
-.cv-icons_telephone:before {
+.cv-icons_photography:before {
   content: "\e905";
 }
-.cv-icons_web:before {
+.cv-icons_star:before {
   content: "\e906";
+}
+.cv-icons_star-b:before {
+  content: "\e907";
+}
+.cv-icons_student:before {
+  content: "\e908";
+}
+.cv-icons_technology:before {
+  content: "\e909";
+}
+.cv-icons_telephone:before {
+  content: "\e90a";
+}
+.cv-icons_web:before {
+  content: "\e90b";
 }
 

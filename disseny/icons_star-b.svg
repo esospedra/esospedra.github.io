@@ -3,6 +3,14 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
 	 height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<g id="animals">
+</g>
+<g id="book">
+</g>
+<g id="photography">
+</g>
+<g id="technology">
+</g>
 <g id="star-b">
 	<g>
 		<path fill="#010002" d="M24.687,29.117L15,22.661l-9.688,6.456l3.232-10.985l-9.085-7.14h11.66L15,0l3.88,10.992h11.66
