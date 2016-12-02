@@ -232,10 +232,10 @@
 				<article>
 					<h1 class="cv-headerinterest__title">Intereses</h1>
 					<ul class="cv-interest__list" itemscope itemtype="http://schema.org/Event">
-						<li class="cv-interest__item"><p><i class="cv-list__item_circle cv-icons_technology"></i>la nuevas tecnologías</p></li>
-						<li class="cv-interest__item"><p><i class="cv-list__item_circle cv-icons_photography"></i>la macrofotografía</p></li>
-						<li class="cv-interest__item"><p><i class="cv-list__item_circle cv-icons_animals"></i>los animales</p></li>
-						<li class="cv-interest__item"><p><i class="cv-list__item_circle cv-icons_book"></i>el cine, los libros y el teatro</p></li>
+						<li class="cv-interest__item"><i class="cv-icons_technology"></i><p class="cv-interest__item__technology">la nuevas tecnologías</p></li>
+						<li class="cv-interest__item"><i class="cv-icons_photography"></i><p class="cv-interest__item__photography">la macrofotografía</p></li>
+						<li class="cv-interest__item"><i class="cv-icons_animals"></i><p class="cv-interest__item__animals">los animales</p></li>
+						<li class="cv-interest__item"><i class="cv-icons_book"></i><p class="cv-interest__item__book">el cine, los libros y el teatro</p></li>
 					</ul>
 				</article>
 				
@@ -257,7 +257,8 @@
 		<script>
 			$(document).ready(function(){
 				$(".cv-headertimeline__title").click(function(){
-					$("ul.cv-timeline").toggle();
+					var $elem = $(this);					
+					$elem.siblings(".cv-timeline").toggle("hidden");					
 				});
 			});
 		</script>

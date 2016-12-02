@@ -86,21 +86,10 @@ ul {
 }
 .cv-list__contact {
 	display:inline-block;
+	margin:20px 0 30px;
 	vertical-align:middle;
 	width:100%;
 }
-/*.cv-list__item_circle {
-	background-color:#cff5ff;
-	background: radial-gradient(at top left, #cff5ff 20%, #4ad7ff);
-	-ms-border-radius: 150px;
-	-moz-border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-o-border-radius: 150px;
-	border-radius: 150px;
-	display:block;
-	height:40px;
-	width:40px;
-}*/
 
 /*content*/
 .cv-icons_star ,
@@ -177,6 +166,7 @@ ul {
 	display: table;
 }
 .cv-timeline {
+	display:none;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	position: relative;
@@ -237,8 +227,11 @@ ul {
 	border-radius: 25px;
 	box-shadow: 0 3px 0 #e3e3e3;
 	margin-left: 60px;
-	padding: 10px;
+	padding: 15px;
 	position: relative;
+}
+.cv-timeline-content time {
+	font-weight:bold;
 }
 .cv-timeline-content:after {
 	content: "";
@@ -249,8 +242,8 @@ ul {
 	color: #303e49;
 }
 .cv-timeline-content p {
-	font-size:12px;	
-	line-height: 16px;
+	font-size:14px;	
+	line-height: 18px;
 	margin: 10px 0;
 }
 .cv-timeline-content .cv-date {
@@ -268,13 +261,14 @@ ul {
 	top: 16px;
 	width: 0;
   }
-/*intereses*/
+/*interest*/
 .cv-headerinterest__title {
 	background:linear-gradient(to right, #efefef, #f9f9f9);
 	margin:20px 0 10px -12px;
 	padding:12px 20px;
 }
 .cv-interest__item {
+	display:inline-block;
 	margin-bottom:10px;
 }
 .cv-icons_animals:before,
@@ -290,27 +284,24 @@ ul {
 	font-size:22px;
 	position:relative;
 }
+.cv-icons_animals:hover:before,
+.cv-icons_book:hover:before,
+.cv-icons_photography:hover:before,
+.cv-icons_technology:hover:before {
+	font-size:30px;
+}
+.cv-interest__item__technology,
+.cv-interest__item__photography,
+.cv-interest__item__animals,
+.cv-interest__item__book {
+	display:none;
+}
 
 
 
 
 /* d'aqui cap a baix revisar tot el codi*/
-
-
-
 /*MEDIA*/
-
-@media only screen and (max-width: 768px) {
-	.cv-header {
-		margin-bottom:20px;
-		width:100%;
-	}
-	.cv-list__contact {
-		margin-bottom:20px;
-		width:100%;
-	}
-}
-
 
 @media only screen and (min-width: 1170px) {
   .cv-timeline {
@@ -322,20 +313,17 @@ ul {
     margin-left: -2px;
   }
 }
-
 @media only screen and (min-width: 1170px) {
   .cv-timeline-img {
     width: 60px;
     height: 60px;
     left: 50%;
     margin-left: -30px;
-    
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
 }
- 
- @media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1170px) {
   .cv-timeline-block {
     margin: 4em 0;
   }
