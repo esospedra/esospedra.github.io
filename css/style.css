@@ -61,11 +61,15 @@ ul {
 	background-color:#fff;
 	margin:0 auto;
 	position:relative;
-	width:100%;
+	max-width:600px;
 }
 .container {
 	margin:20px auto;
 	padding:0 12px;
+	width:100%;
+}
+.cv-container{
+	margin:0 auto;
 }
 .cv-header {
 	display:inline-block;
@@ -128,8 +132,10 @@ ul {
 }
 
 .cv-headercontent__title {
+	background:linear-gradient(to right, #efefef, #f9f9f9);
 	font-size:20px;
-	margin:20px 0 10px;
+	margin:20px 0 10px -12px;
+	padding:12px;
 }
 
 .cv-content__table {
@@ -147,18 +153,25 @@ ul {
 
 /*timeline*/
 .cv-headertimeline__title {
-	background-color:transparent;
+	background:linear-gradient(to right, #efefef, #f9f9f9);
 	border:none;
-	color: #3c3c3c;
-    font-family: "opensans-semibold", sans-serif;
-	
+	color:#3c3c3c;
 	font-size:20px;
-	margin:20px 0 10px;
+	font-family:"opensans-regular",arial;
+	margin:20px 0 10px -12px;
+	padding:12px;
 }
-.cv-container {
-	max-width: 1024px;
-	margin: 0 auto;
+.cv-headertimeline__title:after {
+	content:"{+}";
 }
+.cv-headertimeline__title.ico:after {
+	content:"{-}";
+}
+.cv-headertimeline__title.ico + .cv-timeline{
+	display:block;
+}
+
+
 .cv-container::after {
 	/* clearfix */
 	clear: both;
@@ -264,12 +277,16 @@ ul {
 /*interest*/
 .cv-headerinterest__title {
 	background:linear-gradient(to right, #efefef, #f9f9f9);
+	font-size:20px;
 	margin:20px 0 10px -12px;
-	padding:12px 20px;
+	padding:12px;
 }
 .cv-interest__item {
 	display:inline-block;
 	margin-bottom:10px;
+}
+.cv-interest__list {
+	text-align:center;
 }
 .cv-icons_animals:before,
 .cv-icons_book:before,
@@ -281,14 +298,14 @@ ul {
 .cv-icons_book:before,
 .cv-icons_photography:before,
 .cv-icons_technology:before {
-	font-size:22px;
+	font-size:40px;
 	position:relative;
 }
 .cv-icons_animals:hover:before,
 .cv-icons_book:hover:before,
 .cv-icons_photography:hover:before,
 .cv-icons_technology:hover:before {
-	font-size:30px;
+	font-size:40px;
 }
 .cv-interest__item__technology,
 .cv-interest__item__photography,
@@ -297,13 +314,34 @@ ul {
 	display:none;
 }
 
-
+.cv-list__contact {
+	margin-top:50px;
+}
+.cv-list__contact .cv-list__item {
+	font-size:14px;
+	line-height:20px;
+}
 
 
 /* d'aqui cap a baix revisar tot el codi*/
 /*MEDIA*/
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 600px) {
+	.cv-icons {
+		left: 10px;
+		position: relative;
+		top: 10px;
+	}
+	.cv-icons_student:before,
+	.cv-icons_experience:before {
+		font-size:40px;	
+	}
+	
+	
+	
+	
+	
+	
   .cv-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
@@ -312,8 +350,6 @@ ul {
     left: 50%;
     margin-left: -2px;
   }
-}
-@media only screen and (min-width: 1170px) {
   .cv-timeline-img {
     width: 60px;
     height: 60px;
@@ -322,8 +358,6 @@ ul {
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
-}
-@media only screen and (min-width: 1170px) {
   .cv-timeline-block {
     margin: 4em 0;
   }
@@ -333,18 +367,6 @@ ul {
   .cv-timeline-block:last-child {
     margin-bottom: 0;
   }
-}
-@media only screen and (min-width: 768px) {
-  .cv-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
-  }
-  .cv-timeline-content p {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 1170px) {
   .cv-timeline-content {
     margin-left: 0;
     padding: 1.6em;

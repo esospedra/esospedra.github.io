@@ -24,7 +24,7 @@
 				</section>	
 				
 				<article>
-					<h1 class="cv-headercontent__title">Conocimientos</h1>
+					<h1 class="cv-headercontent__title">Conocimientos { }</h1>
 					<div>
 						<ul class="cv-content__table">
 							<li class="cv-list__item cv-row"><p class="cv-cell">Català</p><p class="cv-cell"><i class="cv-icons_star"></i><i class="cv-icons_star" ></i><i class="cv-icons_star" ></i><i class="cv-icons_star" ></i><i class="cv-icons_star" ></i></p></li>
@@ -45,7 +45,7 @@
 				</article>
 				
 				<article>
-					<button class="cv-headertimeline__title">Formación</button>
+					<button class="cv-headertimeline__title">Formación </button>
 					<ul class="cv-timeline cv-content__timeline cv-container" itemscope itemtype="http://schema.org/Event">
 						<li class="cv-list__item cv-timeline-block">
 							<p itemprop="name" class="cv-timeline-img cv-picture">
@@ -170,7 +170,7 @@
 				</article>
 				
 				<article>
-					<h1 class="cv-headertimeline__title">Experiencia</h1>
+					<button class="cv-headertimeline__title">Experiencia </button>
 					<ul class="cv-timeline cv-content__timeline cv-container"  itemscope itemtype="http://schema.org/Event">
 						<li class="cv-list__item cv-timeline-block">
 							<p itemprop="name" class="cv-timeline-img cv-experience">
@@ -257,8 +257,7 @@
 		<script>
 			$(document).ready(function(){
 				$(".cv-headertimeline__title").click(function(){
-					var $elem = $(this);					
-					$elem.siblings(".cv-timeline").toggle("hidden");					
+				$("button").toggleClass("ico");
 				});
 			});
 		</script>
