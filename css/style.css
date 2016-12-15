@@ -87,6 +87,8 @@ ul {
 	color:#959595;
 	font-family:"opensans-regular",arial;
 	font-size:16px;
+	font-weight:400;
+	line-height:18px;
 }
 .cv-list__contact {
 	display:inline-block;
@@ -134,12 +136,14 @@ ul {
 .cv-headercontent__title {
 	background:linear-gradient(to right, #efefef, #f9f9f9);
 	font-size:20px;
+	font-weight:400;
 	margin:20px 0 10px -12px;
 	padding:12px;
 }
 
 .cv-content__table {
 	display:table;
+	margin:10px 0 20px;
 	width:100%;
 }
 .cv-row {
@@ -162,7 +166,10 @@ article {
 	font-size:20px;
 	font-family:"opensans-regular",arial;
 	margin:20px 0 10px -12px;
+	outline:none;
 	padding:12px;
+	text-align:left;
+	width:100%;
 }
 .cv-headertimeline__title:after {
 	content:"{+}";
